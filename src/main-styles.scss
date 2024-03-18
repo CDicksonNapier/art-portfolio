@@ -1,0 +1,62 @@
+$primary-color-yellow: #ffd700;
+$bg-color:#1f1f38;
+$bg-color-variant:#2c2c6c;
+$color-primary: #4db5ff;
+$color-primary-variant: rgba(77,181,255,0.4);
+$color-white:#fff;
+$color-light:rgba(255,255,255,0.6);
+$container-width-lg: 75%;
+$container-width-md: 85%;
+$container-width-sm: 90%;
+$transition: all 400ms ease;
+
+@import 'animate.css';
+
+@font-face {
+font-family: 'Helvetica Neue';
+src: url('./assets/fonts/HelveticaNeueBlack.otf') format('otf');
+}
+@font-face {
+font-family: 'La Belle Aurore';
+src: url('./assets/fonts/LaBelleAurore-Regular.ttf') format('ttf');
+}
+@font-face {
+font-family: 'Montserrat';
+src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
+}
+@font-face {
+font-family: 'Coolvetica';
+src: url('./assets/fonts/coolveticarg.otf') format('otf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    background-color: $bg-color;
+    color: $color-white;
+    
+    // overflow-x: hidden;
+}
+// Slide in/ out animation for each page
+.slide-in{
+    height: 100%;
+    width: 100%;
+    background-color: $bg-color; 
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+    
+  }

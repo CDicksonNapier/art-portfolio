@@ -1,0 +1,169 @@
+// Importing the root styles. 
+@import '../../main-styles.scss';
+
+.text-zone{
+    display: none;
+}
+// Contact container styling set as a grid and split into columns. The form takes more space overall 
+.contact__container{
+  
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap:12%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    // Socials 
+    .contact__options{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        // Social contact options - created as Articls 
+        article{
+            padding: 1rem;
+            border-radius: 1.2rem;
+            text-align: center;
+            border: 1px solid transparent;
+            transition: $transition;
+            cursor: pointer;
+            &:hover{
+                border: 1px solid $color-primary;
+                background-color: transparent;
+            }
+            h4{
+                font-size:1.2rem;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            h5{
+                font-size: 1rem;               
+                font-weight: 400;
+                margin-bottom: 10px;
+                color:$color-light;
+            }
+            a{
+                color: $color-primary;
+                transition: $transition;
+                font-size: 1rem;
+                &:hover{
+                    color: var(--color-white);
+                }
+            }
+            .contact__option-icon{
+                font-size: 2rem;
+                color: $color-primary;
+            }
+        }
+    }
+    // Form styling
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        input, textarea{
+            width:100%;
+            padding:.5rem;
+            border-radius: 0.5rem;
+            background-color:transparent;
+            border: 2px solid $color-primary-variant;   
+            resize: none;
+            color: $color-white;
+            font-size: 1rem;
+        }
+        label{
+            font-size: 1rem;
+            color:$color-white;
+        }
+        h3{
+            font-size: 1.5rem;
+            color: $color-primary;
+        }
+       
+    }
+    // send button
+    .btn 
+    {
+        width: 50%;
+        padding: 8px 16px; 
+        border-radius: 0.5rem;
+        background-color: $color-primary;
+        color: $color-white;
+        font-size: 1.25rem;
+        transition: $transition;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-primary-variant;
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+   .contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;     
+        width:80%;
+        margin-left: 5%;
+        .contact__options{
+            flex-direction: row;
+            justify-content: space-between;
+            article{
+                width: 100%;                
+                h4{
+                    font-size: 1.15rem;
+                }
+                h5{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .contact__container{
+          width: $container-width-md;
+          .contact__options{
+            margin-left: 50px;
+                article{
+                    padding: 0.5rem;
+                    h4{
+                        font-size: .71rem;
+                    }
+                    h5{
+                        font-size: 0.7rem;
+                    }
+                }
+          }
+           form{
+                width: 70%;
+                margin-left: 10%;
+            }
+     }
+}
+@media screen and (max-width:600px) {
+   .contact__container{
+        width: $container-width-sm;
+        .contact__options{
+            margin-right: 15%;
+            // background-color: aqua;
+            ;
+                article{
+                    padding: 0.5rem;
+                    h4{
+                        font-size: .71rem;
+                    }
+                    h5{
+                        font-size: 0.7rem;
+                    }
+                }
+          }
+           form{
+                width: 80%;
+                margin-left: 10%;
+                padding: 0;
+                gap: 0.5rem;
+            }
+    }
+}

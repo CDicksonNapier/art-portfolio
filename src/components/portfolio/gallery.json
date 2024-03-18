@@ -1,0 +1,222 @@
+
+[
+    {
+        "id": 1,
+        "name": "Ashoka",
+        "image": "../../../images/ashoka.jpg",
+        "desc":"Ahsoka Tano - Created in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 2,
+        "name": "Batman",
+        "image": "../../../images/batman.jpg",
+        "desc":"Batman inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 3,
+        "name": "Batman Full",
+        "image": "../../../images/batmanTwo.jpg",
+        "desc":"Batman inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 4,
+        "name": "Blackcat",
+        "image": "../../../images/blackcat.jpg",
+        "desc": "Blackcat inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 5,
+        "name": "Cybercity",
+        "image": "../../../images/cyberCity.png",
+        "desc": "Cybercity created in blender using Kitbash3D.",
+        "tag":"3D"
+    },
+    {
+        "id": 6,
+        "name": "Daredevil",
+        "image": "../../../images/dareDevil.jpg",
+        "desc": "Daredevil inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 7,
+        "name": "Darth Vader",
+        "image": "../../../images/darthVader.jpg",
+        "desc": "Darth Vader inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 8,
+        "name": "Donatello",
+        "image": "../../../images/donatello.jpg",
+        "desc":"Donatello inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 9,
+        "name": "Fractal Tiger",
+        "image": "../../../images/fractalTiger.jpg",
+        "desc":"Fractal Tiger created in Photoshop with Fractilous.",
+        "tag":"Digital Design"
+    },
+    {
+        "id": 10,
+        "name": "Gamora",
+        "image": "../../../images/gamora.jpg",
+        "desc":"Gamora inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 11,
+        "name": "Gonk and Mouse droids",
+        "image": "../../../images/gonkAndMousedroids.jpg",
+        "desc":"Gonk and Mouse droids created with Blender.",
+        "tag":"3D"
+    },
+    {
+        "id": 12,
+        "name": "Grass",
+        "image": "../../../images/grass.jpg",
+        "desc": "Grass rendered created in Blender.",
+        "tag":"3D"
+    }
+    ,
+    {
+        "id": 14,
+        "name": "Harley and Joker",
+        "image": "../../../images/harleyAndJoker.jpg",
+        "desc":"Harley and Joker inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 15,
+        "name": "Krang",
+        "image": "../../../images/kaang.jpg",
+        "desc":"Krang inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 16,
+        "name": "Leia",
+        "image": "../../../images/leia.jpg",
+        "desc":"Leia inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 17,
+        "name": "Leonardo",
+        "image": "../../../images/leonardo.jpg",
+        "desc":"Leonardo inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 18,
+        "name": "Michelangelo",
+        "image": "../../../images/michelangelo.jpg",
+        "desc":"Michelangelo inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 19,
+        "name": "Obi Wan",
+        "image": "../../../images/obiwan.jpg",
+        "desc":"Obi Wan inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 20,
+        "name": "Outdoor Scene",
+        "image": "../../../images/outdoorScene.jpg",
+        "desc":"Outdoor Scene created in Blender.",
+        "tag":"3D"
+    },
+    {
+        "id": 21,
+        "name": "Rainy Alley",
+        "image": "../../../images/rainyalley.png",
+        "desc":"Rainy Alley created in Blender.",
+        "tag":"3D"
+    },
+    {
+        "id": 22,
+        "name": "Raphael",
+        "image": "../../../images/rapheal.jpg",
+        "desc":"Raphael inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 23,
+        "name": "Red",
+        "image": "../../../images/red.jpg",
+        "desc":"Red singer inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 24,
+        "name": "rooftop",
+        "image": "../../../images/rooftop.png",
+        "desc":"Rooftop scene created in Blender using Kitbash3D.",
+        "tag":"3D"
+    },
+    {
+        "id": 25,
+        "name": "Sea Shack ",
+        "image": "../../../images/shackLight.png",
+        "desc":"Sea Shack lighting test created in Blender.",
+        "tag":"3D"
+    },
+    {
+        "id": 27,
+        "name": "Slave Leia",
+        "image": "../../../images/slaveLeia.jpg",
+        "desc":"Slave Leia inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 28,
+        "name": "Snowy Mountain",
+        "image": "../../../images/snowScene.jpg",
+        "desc":"Snowy Mountain Scene created in Blender using Kitbash3D.",
+        "tag":"3D"
+    },
+    {
+        "id": 29,
+        "name": "Spiderman",
+        "image": "../../../images/spiderman.jpg",
+        "desc":"Spiderman inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 30,
+        "name": "Spiderwoman & Batgirl",
+        "image": "../../../images/spiderwomanAndBatgirl.jpg",
+        "desc":"Spiderwoman & Batgirl inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 31,
+        "name": "Tigerlily",
+        "image": "../../../images/tigerlilly.jpg",
+        "desc":"Tigerlily inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 32,
+        "name": "Turtles",
+        "image": "../../../images/turtles.jpg",
+        "desc":"Turtles inked and coloured in Photoshop.",
+        "tag":"Comic"
+    },
+    {
+        "id": 33,
+        "name": "Underground",
+        "image": "../../../images/underground.png",
+        "desc":"Underground Corridor scene created in Blender using Kitbash3D.",
+        "tag":"3D"
+    }
+]
+

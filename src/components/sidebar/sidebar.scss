@@ -1,0 +1,202 @@
+@import '../../main-styles.scss';
+
+
+// Navbar and logo styling
+
+// Bottom Navigation - turned off for larger screens 500px and above
+.bottom-nav-bar{
+    display: none;
+}
+// Navbar styling 
+.nav-bar{
+    background-color:rgba(24,24,24,0.7);
+    backdrop-filter: blur(10px);
+    width: 120px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    min-height: 500px;
+    
+    // logo styling
+    .logo{      
+      height: 200px;
+      width: 100%;
+      display: flex;
+    //   logo image styling
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    }
+    
+}
+// Nav & Links styling
+nav{
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -120px ;
+    width: 100%;
+// Nav anchor tags styling
+    a{
+        font-size: 1.1rem;
+        color: white;
+        display: block;
+        line-height: 51px;
+        position: relative;
+        text-decoration: none;
+// Nav anchor Icon 
+        i{
+            transition: $transition;
+        }
+        // Nav anchor hover styling
+        &:hover{
+            color: $color-primary;
+            svg{
+                opacity: 0;
+            }
+            &:after{
+                opacity:1;
+            }
+        }
+        // Nav anchor tag - after style - reveals text on hover  for each link(home, about, portfolio, contact)
+        &:after{
+            content: '';
+            position: absolute;
+            font-size:1rem;
+            letter-spacing: 2px;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: $transition;
+            font-family: 'Helvetica Neue', sans-serif; 
+            }
+            &:first-child{
+                &:after{
+                    content:'Home'
+                }                
+            }
+
+    }
+    a.about-link{
+        &:after{
+            content:'About'
+        }
+    }
+    a.portfolio-link{
+        &:after{
+            content:'Portfolio'
+        }
+    }
+    a.contact-link{
+        &:after{
+            content:'Contact'
+        }
+    }
+    a.active{
+        svg{
+            color: $color-primary;
+        }
+    }
+    
+}
+// End of the navbar styling
+// Social Links Styling
+.social-links{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+// the social links are in the form of a list 
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        li a {
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    }
+       
+}
+// Media Queries 
+// starting with larger desktop screens
+@media screen and (max-width:1440px){
+    // Making the navbar 100vh so that when the user is on the portfolio page, the navbar will follow the user as they scroll down
+    .nav-bar{
+        height:100vh;
+    }
+}
+// smaller screens (for mobiles) main side bar is turned off and bottom navigation is turned on
+@media screen and (max-width: 600px){
+    .nav-bar{
+        display:none;
+    }
+    .bottom-nav-bar{
+        height: 50px;
+        width: 100%;
+        background-color:rgba(24,24,24,0.7);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        z-index: 100;
+        ul{
+               display: flex;
+               justify-content: space-evenly;
+               width: 100%;
+               align-items: center;
+               li a{
+                 margin-left: 2px;
+                 margin-right: 2px;
+               }
+        }
+         
+ 
+ 
+         
+         
+         
+     }
+
+}
+// very small screens
+@media screen and (max-width: 480px){
+    .nav-bar{
+    display: none;
+    }
+    .bottom-nav-bar{
+       height: 50px;
+       width: 100%;
+       background-color:rgba(24,24,24,0.7);
+       backdrop-filter: blur(10px);
+       position: fixed;
+       bottom: 0;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+         z-index: 100;
+       ul{
+              display: flex;
+              justify-content: space-evenly;
+              width: 100%;
+              align-items: center;
+              li a{
+                margin-left: 2px;
+                margin-right: 2px;
+              }
+       }
+    }
+}
+
+// End of the media queries

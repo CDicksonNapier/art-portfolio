@@ -1,0 +1,136 @@
+@import '../../main-styles.scss';
+
+// App styling
+//home page container 
+
+.home-page {
+  // text zone - that houses the animated letters, subheader and buttons/. 
+    .text-zone {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50%;
+      max-height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      z-index: 1;      
+      // Span for the individual animated letters 
+      span{
+        font-size:4rem;
+        font-weight: 700;
+        font-family: 'Coolvetica', sans-serif;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+      // The image tag for the logo 
+        img {
+          margin-left: 8px;
+          opacity: 0;
+          width: 7rem;
+          height: auto;
+          animation: rotateIn .51s linear both;
+          animation-delay: 1.4s;
+      }
+}
+
+// Subheader text styling
+h2 {
+    color: $color-white;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  } 
+// Contact button styling and hover effect. 
+  .flat-button {
+    color: $color-white;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 20px 36px;
+    border: 1px solid $color-white;
+    margin-top: 20px;
+    float: left;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+    &:hover {
+      background: $color-white;
+      color: $color-primary;
+    }
+}
+}
+// media queries - from large laptop/desktop to tablet/mobile sizes
+@media screen and (max-width: 1440px) {
+    .home-page {
+      .text-zone {
+        left: 10%;
+        width: 66%;
+        span{
+            font-size: 4rem;
+            }
+        h2{
+            font-size: 1rem;
+        
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .home-page {
+      .text-zone {
+        left: 15%;
+        width: 72%;
+        img{
+            width: 5rem;
+        }
+        span{
+            font-size: 3rem;
+            }
+            h2{
+                font-size: 0.9rem;
+            
+            }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home-page {
+      .text-zone {
+        left: 18%;
+        width: 80%;
+        span{
+            font-size: 2.5rem;
+            }
+            h2{
+                font-size: 0.68rem;
+            
+            }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .home-page {
+      .text-zone {
+        left: 5%;
+        width: 100%;
+        span{
+            font-size: 1.75rem;
+            }
+            h2{
+                width:87%;
+                font-size: 1rem;            
+            }
+       
+      }
+    }
+}
