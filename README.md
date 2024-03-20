@@ -1,3 +1,5 @@
+I wanted to revisit and recreate the first ever portfolio project i created 4 years ago. The original portfolio was a very basic html/css and js portfolio with limited functionality. This portfolio has been created with React and Sass and features page transitions, animations and more interactivity.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
