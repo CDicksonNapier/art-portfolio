@@ -21,6 +21,7 @@ const Contact = () => {
       e.preventDefault();
       // send the form data to the emailjs service - this will be removed in the final version(for safety)
       emailjs.sendForm('service_doftflw', 'template_5xytbsj', form.current, 'g2mhZZgR1tSDrVVXW')
+      alert('Your message has been sent! I will get back to you as soon as possible.')// Alert the user that the email has been sent
       // Reset the form after the email is sent
       e.target.reset()
     }
